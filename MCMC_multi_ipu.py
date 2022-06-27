@@ -15,10 +15,10 @@ num_burnin_steps = 100
 num_ipus = 2
 num_results = 400
 num_leapfrog_steps = 1000 
-input_file = "/Users/ishaanjolly/Desktop/Graphcore/returns_and_features_for_mcmc.txt"
+input_file = "~/Graphcore/returns_and_features_for_mcmc.txt"
 useful_features = 22 
 num_skip_columns =2 
-output_file = "/Users/ishaanjolly/Desktop/Graphcore/output_samples.txt"
+output_file = "~/Graphcore/output_samples.txt"
 
 print("\nMCMC sampling example with Tensorflow Probability\n"
       "Single Precision \n"
