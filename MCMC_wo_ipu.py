@@ -7,10 +7,10 @@ first_layer_size = 40
 num_burnin_steps = 100 
 num_results = 600 
 num_leapfrog_steps = 1000 
-input_file = "/Users/ishaanjolly/Desktop/Graphcore/returns_and_features_for_mcmc.txt"
+input_file = "returns_and_features_for_mcmc.txt"
 useful_features = 22 
 num_skip_columns =2 
-output_file = "/Users/ishaanjolly/Desktop/Graphcore/output_samples.txt"
+output_file = "output_samples.txt"
 
 ## Load data 
 # Load data
