@@ -1,12 +1,20 @@
 # IPU modules
 from tensorflow.python.ipu import ipu_compiler, ipu_infeed_queue, loops, utils
 from tensorflow.python.ipu.scopes import ipu_scope, ipu_shard
+from tensorflow.python import ipu
 
 # General tensorflow libs
 import tensorflow_probability as tfp 
 import tensorflow as tf 
 import time as time 
 import numpy as np 
+
+# Configure the IPU system
+config = ipu.config.IPUConfig()
+config.auto_select_ipus = 1
+config.configure_ipu_system()
+# Create an IPU distribution strategy
+strategy = ipu.ipu_strategy.IPUStrategy()
 
 first_layer_size = 40 
 num_burnin_steps = 100 
